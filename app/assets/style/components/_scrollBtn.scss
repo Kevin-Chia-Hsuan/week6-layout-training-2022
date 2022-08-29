@@ -18,3 +18,18 @@
     color: $light;
   }
 }
+
+.scrollRightBtn {
+  text-decoration: none;
+  display: flex; /*^圖示*/
+  justify-content: center; /*^圖示置中*/
+  align-items: center; /*^圖示置中*/
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  background: linear-gradient(to top, #62db54, #09acf5);
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

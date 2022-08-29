@@ -14,10 +14,18 @@
   border-bottom: $light 3px solid;
   width: 50px;
 }
+.border-light-left {
+  border-left: 2px solid $success;
+  padding-left: 8px;
+}
 //防止載入AOS動畫後，RWD出現破板問題
 .over-x {
   overflow-x: hidden;
 }
 .rounded-4 {
   border-radius: 24px !important;
+}
+.list-style-square {
+  list-style: square;
+  color: $success;
 }
