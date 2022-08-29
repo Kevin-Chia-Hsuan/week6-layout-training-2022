@@ -39,6 +39,9 @@
   .card:hover {
     .squareRounded {
       display: block;
+      @include pad {
+        display: none;
+      }
     }
   }
 }
