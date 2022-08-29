@@ -16689,12 +16689,22 @@ a {
   width: 50px;
 }
 
+.border-light-left {
+  border-left: 2px solid #62db54;
+  padding-left: 8px;
+}
+
 .over-x {
   overflow-x: hidden;
 }
 
 .rounded-4 {
   border-radius: 24px !important;
+}
+
+.list-style-square {
+  list-style: square;
+  color: #62db54;
 }
 
 .banner {
@@ -16955,6 +16965,37 @@ a {
 
 .scrollTopBtn i {
   color: #ffffff;
+}
+
+.scrollRightBtn {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*^圖示*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*^圖示置中*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*^圖示置中*/
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#62db54), to(#09acf5));
+  background: -o-linear-gradient(bottom, #62db54, #09acf5);
+  background: linear-gradient(to top, #62db54, #09acf5);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.scrollRightBtn:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .btn-primary-hover:hover {
