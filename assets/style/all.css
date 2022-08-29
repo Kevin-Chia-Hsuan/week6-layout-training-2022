@@ -17068,6 +17068,12 @@ a {
   display: block;
 }
 
+@media screen and (max-width: 992px) {
+  .article-list .card:hover .squareRounded {
+    display: none;
+  }
+}
+
 .swiper {
   width: 100%;
   height: 429px;
