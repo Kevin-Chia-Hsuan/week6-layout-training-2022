@@ -1,0 +1,77 @@
+//自訂網頁文字大小、行高
+$font-size-custom: 1rem;
+$text-types: (
+  xxs: $font-size-custom * 0.75,
+  // font-siz:12px
+  xs: $font-size-custom * 0.875,
+  // font-siz:14px
+  s: $font-size-custom * 1,
+  // font-siz:16px
+  m: $font-size-custom * 1.125,
+  // font-siz:18px
+  l: $font-size-custom * 1.25,
+  // font-siz:20px
+  lg: $font-size-custom * 1.375,
+  // font-siz:22px
+  xl: $font-size-custom * 1.5,
+  // font-siz:24px
+  2xl: $font-size-custom * 1.75,
+  // font-siz:28px
+  3xl: $font-size-custom * 2,
+  // font-siz:32px
+  4xl: $font-size-custom * 3,
+  // font-siz:48px
+) !default;
+
+@each $name, $font-size-custom in $text-types {
+  .text-#{$name} {
+    font-size: $font-size-custom;
+  }
+}
+@include pad {
+  @each $name, $font-size-custom in $text-types {
+    .text-md-#{$name} {
+      font-size: $font-size-custom;
+    }
+  }
+}
+@include mobile {
+  @each $name, $font-size-custom in $text-types {
+    .text-sm-#{$name} {
+      font-size: $font-size-custom;
+    }
+  }
+}
+
+.azeret-mono {
+  font-family: 'Azeret Mono', monospace;
+}
+
+// 文字色漸層
+.text-gradient {
+  background: linear-gradient(to top, #62db54, #09acf5);
+  background: -webkit-linear-gradient(to top, #62db54, #09acf5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.icon-size {
+  font-size: 40px;
+}
+.text-gradient-hover {
+  &:hover {
+    background: linear-gradient(to top, #62db54, #09acf5) !important;
+    background: -webkit-linear-gradient(to top, #62db54, #09acf5) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+  }
+}
+.text-gradient-border-hover {
+  transition: 0.5s;
+  &:hover {
+    border: 1px $success solid !important;
+    border-radius: 12px;
+    background-color: $tertiary !important;
+  }
+}

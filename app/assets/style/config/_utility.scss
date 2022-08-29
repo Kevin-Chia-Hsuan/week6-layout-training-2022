@@ -1,0 +1,23 @@
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  @include mobile {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+.border-line {
+  border-bottom: $success 3px solid;
+  width: 50px;
+}
+.border-line-light {
+  border-bottom: $light 3px solid;
+  width: 50px;
+}
+//防止載入AOS動畫後，RWD出現破板問題
+.over-x {
+  overflow-x: hidden;
+}
+.rounded-4 {
+  border-radius: 24px !important;
+}

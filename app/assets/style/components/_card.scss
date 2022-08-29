@@ -1,0 +1,44 @@
+.card-img-circle {
+  min-width: 100px;
+  img {
+    @include size(100px, 100px);
+    border-radius: 50%;
+  }
+}
+.card-success-hover {
+  &:hover {
+    border-color: $success;
+  }
+}
+.article-list {
+  .squareRounded {
+    display: none;
+    width: 32px;
+    height: 32px;
+    &-topLeft {
+      border-top: 2px solid $success;
+      border-left: 2px solid $success;
+      border-top-left-radius: 10px;
+    }
+    &-topRight {
+      border-top: 2px solid $success;
+      border-right: 2px solid $success;
+      border-top-right-radius: 10px;
+    }
+    &-bottomLeft {
+      border-bottom: 2px solid $success;
+      border-left: 2px solid $success;
+      border-bottom-left-radius: 10px;
+    }
+    &-bottomRight {
+      border-bottom: 2px solid $success;
+      border-right: 2px solid $success;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  .card:hover {
+    .squareRounded {
+      display: block;
+    }
+  }
+}

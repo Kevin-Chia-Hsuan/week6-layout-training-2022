@@ -1,0 +1,23 @@
+// btn-primary按鈕hover效果
+.btn-primary-hover {
+  &:hover {
+    background: $light !important;
+    color: $dark !important;
+  }
+}
+.btn-secondary-hover {
+  &:hover {
+    color: $success !important;
+    border-color: $success !important;
+  }
+}
+// 漸層色按鈕
+.btn-gradient {
+  background: linear-gradient(to left, #62db54, #09acf5);
+}
+// 漸層色按鈕hover效果
+.btn-gradient-hover {
+  &:hover {
+    background: linear-gradient(to right, #62db54, #09acf5) !important;
+  }
+}

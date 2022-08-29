@@ -1,0 +1,82 @@
+.banner {
+  background: url(../images/bg_home.jpg) center 100% / cover;
+  height: 680px;
+  @include pad {
+    background: url(../images/bg_home_mobile.jpg) center 100% / contain;
+    height: 336px;
+  }
+}
+.bg-md-tertiary {
+  @include mobile {
+    background-color: $tertiary;
+    border-radius: 12px;
+  }
+}
+.class-info {
+  .class-info-1 {
+    background: url('../images/info01.jpg') center / cover;
+  }
+  .class-info-2 {
+    background: url('../images/info02.jpg') center / cover;
+  }
+  .class-info-3 {
+    background: url('../images/info03.jpg') center / cover;
+  }
+  .class-info-4 {
+    background: url('../images/info04.jpg') center / cover;
+  }
+  .class-info-1,
+  .class-info-2,
+  .class-info-3,
+  .class-info-4 {
+    height: 615px;
+    @include mobile {
+      height: 263px;
+    }
+    transition: all 0.5s;
+    &:hover {
+      .material-icons {
+        color: $success !important;
+      }
+      .border-line-light {
+        border-color: $success;
+      }
+    }
+    @include pad {
+      .material-icons {
+        color: $success !important;
+      }
+      .border-line-light {
+        border-color: $success;
+      }
+    }
+    .filter {
+      background: rgba(28, 28, 28, 0.8);
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      transition: all 0.5s;
+      &:hover {
+        background: rgba(28, 28, 28, 0);
+      }
+      @include pad {
+        background: rgba(28, 28, 28, 0.5);
+      }
+    }
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
+  }
+}
+.feedback {
+  background: url(../images/bg_share.jpg) center 100% / contain;
+  background-repeat: no-repeat;
+  height: 733px;
+  @include mobile {
+    height: 620px;
+  }
+}

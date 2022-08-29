@@ -1,0 +1,55 @@
+// .navbar {
+//   a:hover {
+//     color: $success !important;
+//   }
+// }
+.nav-logo {
+  background-image: url(../images/logo.svg);
+  @include background-type;
+  @include size(174px, 100%);
+}
+.nav-logo-sm {
+  background-image: url(../images/logo2.svg);
+  @include background-type;
+  @include size(24px, 24px);
+}
+.navbar {
+  position: relative;
+}
+
+// navbar選單下方藍、綠線條
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 91px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: $success;
+  @include mobile {
+    top: 82px;
+  }
+}
+.navbar::after {
+  content: '';
+  position: absolute;
+  top: 91px;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background-color: $info;
+  @include mobile {
+    top: 82px;
+  }
+}
+
+// 取消BS5手機版選單推擠，改為覆蓋在頁面上
+.navbar-nav {
+  @include mobile {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    top: 84px;
+  }
+}
