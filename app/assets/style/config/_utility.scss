@@ -6,6 +6,12 @@
     padding-left: 12px;
   }
 }
+.cursor {
+  cursor: pointer;
+}
+.lh-1 {
+  line-height: 1.5 !important;
+}
 .border-line {
   border-bottom: $success 3px solid;
   width: 50px;

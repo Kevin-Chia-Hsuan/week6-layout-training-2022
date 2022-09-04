@@ -15,3 +15,30 @@
 .opacity-50 {
   opacity: 0.5;
 }
+.login-icon {
+  @include size(24px, 24px);
+}
+.login-line::before {
+  content: '';
+  position: absolute;
+  background-color: $gray-50;
+  top: 16px;
+  left: 0;
+  width: 36%;
+  height: 2px;
+  @include mobile {
+    width: 33%;
+  }
+}
+.login-line::after {
+  content: '';
+  position: absolute;
+  background-color: $gray-50;
+  top: 16px;
+  right: 0;
+  width: 36%;
+  height: 2px;
+  @include mobile {
+    width: 33%;
+  }
+}
